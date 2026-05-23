@@ -65,5 +65,3 @@ Swagger
 Open in browser:
 
 http://localhost:5295/swagger
-لو عايز 👌
-أعملهولك version “GitHub Premium” فيه badges وCI وstructure أقوى يخليه شكله مشروع شركة مش مشروع طالب.
