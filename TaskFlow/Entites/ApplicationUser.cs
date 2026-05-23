@@ -1,21 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity;
 
 namespace TaskFlow.Entites
 {
-    public class ApplicationUser
+    public class ApplicationUser : IdentityUser
     {
-        [Key]
-        public Guid Id { get; set; }
-
-        [Required]
         public string FullName { get; set; } = string.Empty;
-
-        [Required]
-        [EmailAddress]
-        public string Email { get; set; } = string.Empty;
-
-        [Required]
-        public string PasswordHash { get; set; } = string.Empty;
 
         public ICollection<Project> Projects { get; set; } = new List<Project>();
     }

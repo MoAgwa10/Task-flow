@@ -6,5 +6,6 @@ public class UpdateTaskStatusDto
     public Guid TaskId { get; set; }
 
     [Required]
-    public TaskStatus Status { get; set; }
+    public TaskFlow.Enums.TaskStatus Status { get; set; }
+
 }

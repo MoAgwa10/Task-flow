@@ -4,7 +4,6 @@ namespace TaskFlow.Dtos.AuthDto
 {
     public class RegisterDto
     {
-
         [Required]
         public string FullName { get; set; } = string.Empty;
 
@@ -13,6 +12,8 @@ namespace TaskFlow.Dtos.AuthDto
         public string Email { get; set; } = string.Empty;
 
         [Required]
+        [MinLength(6)]
+        [MaxLength(100)]
         public string Password { get; set; } = string.Empty;
     }
 }

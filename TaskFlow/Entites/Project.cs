@@ -15,9 +15,8 @@ public class Project
     [Required]
     public DateTime CreatedAt { get; set; }
 
-    // Foreign Key
     [Required]
-    public Guid UserId { get; set; }
+    public string UserId { get; set; } = string.Empty;
 
     [ForeignKey(nameof(UserId))]
     public ApplicationUser User { get; set; } = null!;

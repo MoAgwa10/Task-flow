@@ -13,7 +13,7 @@ public class TaskItem
     public string Description { get; set; } = string.Empty;
 
     [Required]
-    public TaskStatus Status { get; set; }
+    public TaskFlow.Enums.TaskStatus Status { get; set; }
 
     [Required]
     public DateTime DueDate { get; set; }

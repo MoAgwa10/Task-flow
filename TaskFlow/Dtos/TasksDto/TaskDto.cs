@@ -6,7 +6,8 @@
 
     public string? Description { get; set; }
 
-    public TaskStatus Status { get; set; }
+    public TaskFlow.Enums.TaskStatus Status { get; set; }
+
 
     public DateTime DueDate { get; set; }
 
